@@ -1,5 +1,5 @@
 Metric implements
-============
+=================
 .. toctree::
    :maxdepth: 3
 

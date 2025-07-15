@@ -18,7 +18,7 @@ This is a comprehensive image quality assessment (IQA) toolbox built with **pure
 
 <div align="center">
 
-📦 [Model Cards](docs/ModelCard.md)  |  🗃️ [Dataset Cards](docs/Dataset_Preparation.md) | 🤗 [Datasets Download](https://huggingface.co/datasets/chaofengc/IQA-Toolbox-Datasets/tree/main) | 📚 [Documentation](https://iqa-pytorch.readthedocs.io/en/latest/) | 📈[Benchmark](https://github.com/chaofengc/IQA-PyTorch/tree/main?tab=readme-ov-file#performance-evaluation-protocol)
+📦 [Model Cards](docs/modelcard.md)  |  🗃️ [Dataset Cards](docs/Dataset_Preparation.md) | 🤗 [Datasets Download](https://huggingface.co/datasets/chaofengc/IQA-Toolbox-Datasets/tree/main) | 📚 [Documentation](https://iqa-pytorch.readthedocs.io/en/latest/) | 📈[Benchmark](https://github.com/chaofengc/IQA-PyTorch/tree/main?tab=readme-ov-file#performance-evaluation-protocol)
 
 </div>
 
@@ -99,7 +99,7 @@ score = fid_metric('./ResultsCalibra/dist_dir/', dataset_name="FFHQ", dataset_re
 
 #### Use as loss functions
 
-Note that gradient propagation is disabled by default. Set `as_loss=True` to enable it as a loss function. **Not all metrics support backpropagation, please refer to [Model Cards](docs/ModelCard.md) and be sure that you are using it in a `lower_better` way.**
+Note that gradient propagation is disabled by default. Set `as_loss=True` to enable it as a loss function. **Not all metrics support backpropagation, please refer to [Model Cards](docs/modelcard.md) and be sure that you are using it in a `lower_better` way.**
 ```python
 lpips_loss = pyiqa.create_metric('lpips', device=device, as_loss=True)
 
@@ -272,7 +272,7 @@ torchrun --nproc_per_node=2 --master_port=4321 pyiqa/train.py -opt options/train
 
 ## :beers: Contribution
 
-Any contributions to this repository are greatly appreciated. Please follow the [contribution instructions](docs/Instruction.md) for contribution guidance.
+Any contributions to this repository are greatly appreciated. Please follow the [contribution instructions](docs/contributing.md) for contribution guidance.
 
 ## :scroll: License
 

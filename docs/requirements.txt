@@ -1,6 +1,6 @@
 furo
-recommonmark
 sphinx-autoapi
-sphinx-markdown-tables
+myst-parser
+sphinx-copybutton
 sphinx_rtd_theme
 sphinxcontrib-napoleon

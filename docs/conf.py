@@ -14,8 +14,9 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath('..'))
+
+from pyiqa.version import __version__
 
 # -- Project information -----------------------------------------------------
 
@@ -24,19 +25,16 @@ copyright = '2021 - 2024, Chaofeng Chen'
 author = 'Chaofeng Chen'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.13'
+release = __version__
 
 
 # -- General configuration ---------------------------------------------------
 
 # Markdown support
-from recommonmark.parser import CommonMarkParser
-
-source_parsers = {
-    '.md': CommonMarkParser,
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
 }
-
-source_suffix = ['.rst', '.md']
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -53,8 +51,8 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
-    'recommonmark',
-    'sphinx_markdown_tables',
+    'myst_parser',
+    'sphinx_copybutton',
     'autoapi.extension',
 ]
 
@@ -77,6 +75,8 @@ autodoc_typehints = 'signature'
 #         skip = True
 #     return skip
 
+myst_enable_extensions = ['colon_fence']
+myst_heading_anchors = 4
 
 def skip_attributes(app, what, name, obj, skip, options):
     if what == 'attribute':

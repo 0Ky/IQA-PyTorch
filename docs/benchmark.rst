@@ -1,5 +1,5 @@
 Performance Benchmark and Calibration
-==========================================
+=====================================
 
 .. raw:: html
 
@@ -13,11 +13,11 @@ Performance Benchmark and Calibration
 
 
 Performance Evaluation Protocol
-----------------------------------------
+-------------------------------
 
 **We use official models for evaluation if available.** Otherwise, we use the following settings to train and evaluate different models for simplicity and consistency:
 
-.. csv-table:: Evaluation Protocol 
+.. csv-table:: Evaluation Protocol
    :header: "Metric Type", "Train", "Test"
 
     "FR", "KADID-10k", "CSIQ, LIVE, TID2008, TID2013"
@@ -35,21 +35,21 @@ Basically, we use the largest existing datasets for training, and cross dataset 
 - Aesthetic IQA: ``nima``, ``nima-vgg16-ava``
 
 Performance on FR benchmarks
-----------------------------------------
+----------------------------
 
 .. csv-table:: FR benchmark
     :header-rows: 1
     :file: ../tests/FR_benchmark_results.csv
 
 Performance on NR benchmarks
-----------------------------------------
+----------------------------
 
 .. csv-table:: NR benchmark
     :header-rows: 1
     :file: ../tests/NR_benchmark_results.csv
 
 Performance on image aesthetic benchmarks
-----------------------------------------
+-----------------------------------------
 
 .. csv-table:: IAA benchmark
     :header-rows: 1
@@ -57,15 +57,15 @@ Performance on image aesthetic benchmarks
 
 
 Results Calibration
-----------------------------------------
+-------------------
 
 .. csv-table:: Calibration
     :header-rows: 1
     :file: ../ResultsCalibra/calibration_summary.csv
 
-Efficiency Benchmark 
-----------------------------------------
+Efficiency Benchmark
+--------------------
 
-.. csv-table:: Efficiency Benchmark 
+.. csv-table:: Efficiency Benchmark
     :header-rows: 1
     :file: ../tests/Efficiency_benchmark.csv

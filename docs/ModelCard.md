@@ -8,6 +8,10 @@ import pyiqa
 print(pyiqa.list_models())
 ```
 
+:::{table}
+:widths: auto
+:align: center
+
 | FR Method                | Model names                                                            | Description                                                | Score Direction  |
 | ------------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------- |
 | TOPIQ                    | `topiq_fr`, `topiq_fr-pipal`                                           | Proposed in [this paper](https://arxiv.org/abs/2308.03060) | Higher is better |
@@ -27,7 +31,11 @@ print(pyiqa.list_models())
 | NLPD                     | `nlpd`                                                                 |                                                            | Lower is better  |
 | VSI                      | `vsi`                                                                  |                                                            | Higher is better |
 | MAD                      | `mad`                                                                  |                                                            | Lower is better  |
+:::
 
+:::{table}
+:widths: auto
+:align: center
 
 | NR Method                    | Model names                                                                                                         | Description                                                                                  | Score Direction  |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- |--------------------------------------------------------------------------------------------- | ---------------- |
@@ -53,19 +61,23 @@ print(pyiqa.list_models())
 | ILNIQE                       | `ilniqe`                                                                                                            | No backward                                                                                  | Lower is better  |
 | NIQE                         | `niqe`, `niqe_matlab`                                                                                               | No backward                                                                                  | Lower is better  |
 | PIQE                         | `piqe`                                                                                                              | No backward                                                                                  | Lower is better  |
-<!-- </tr>
-</table> -->
+:::
 
 <a name="fn1">[1]</a> This method use distorted image as reference. Please refer to the paper for details.<br>
 <a name="fn2">[2]</a> Currently, only naive random forest regression is implemented and **does not** support backward.
 
 ## IQA Methods for Specific Tasks
 
+:::{table}
+:widths: auto
+:align: center
+
 | Task           | Method          | Description                                                                                                                                                                 | Score Direction  |
 | -------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Color IQA      | `msswd`         | Perceptual color difference metric MS-SWD, ECCV2024, [Arxiv](http://arxiv.org/abs/2407.10181), [Github](https://github.com/real-hjq/MS-SWD)                                 | Lower is better  |
 | Face IQA       | `topiq_nr-face` | TOPIQ model trained with face IQA dataset (GFIQA)                                                                                                                           | Higher is better |
 | Underwater IQA | `uranker`       | A ranking-based underwater image quality assessment (UIQA) method, AAAI2023, [Arxiv](https://arxiv.org/abs/2208.06857), [Github](https://github.com/RQ-Wu/UnderwaterRanker) | Higher is better |
+:::
 
 ## Metric Output Score Range
 **Note: `~` means that the corresponding numeric bound is typical value and not mathematically guaranteed**

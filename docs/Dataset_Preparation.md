@@ -11,6 +11,10 @@
 
 The following datasets can be loaded with the current codes after downloaded (see example [scripts](../options/example_benchmark_data_opts.yml)):
 
+:::{table}
+:widths: auto
+:align: center
+
 | FR Dataset | Description | NR Dataset       | Description        |
 | ---------- | ----------- | ---------------- | ------------------ |
 | PIPAL      | *2AFC*      | FLIVE(PaQ-2-PiQ) | *Tech & Aesthetic* |
@@ -19,9 +23,10 @@ The following datasets can be loaded with the current codes after downloaded (se
 | KADID-10k  |             | KonIQ-10k(++)    |                    |
 | LIVEM      |             | LIVEChallenge    |                    |
 | LIVE       |             | [PIQ2023](https://github.com/DXOMARK-Research/PIQ2023)| Portrait dataset   |
-| TID2013    |             | [GFIQA](http://database.mmsp-kn.de/gfiqa-20k-database.html)| Face IQA Dataset   |
+| TID2013    |             | [GFIQA](https://database.mmsp-kn.de/gfiqa-20k-database.html)| Face IQA Dataset   |
 | TID2008    |             |                  |                    |
 | CSIQ       |             |                  |                    |
+:::
 
 Please see more details at [Awesome Image Quality Assessment](https://github.com/chaofengc/Awesome-Image-Quality-Assessment)
 
@@ -29,7 +34,7 @@ Please see more details at [Awesome Image Quality Assessment](https://github.com
 
 Here are some other resources to download the dataset:
 - [**Our huggingface archive 🤗**](https://huggingface.co/datasets/chaofengc/IQA-Toolbox-Datasets/tree/main)
-- [**Waterloo Bayesian IQA project**](http://ivc.uwaterloo.ca/research/bayesianIQA/). [ [IQA-Dataset](https://github.com/icbcbicc/IQA-Dataset) | [download links](http://ivc.uwaterloo.ca/database/IQADataset) ]
+- [**Waterloo Bayesian IQA project**](https://ivc.uwaterloo.ca/research/bayesianIQA/). [ [IQA-Dataset](https://github.com/icbcbicc/IQA-Dataset) | [download links](https://ivc.uwaterloo.ca/database/IQADataset) ]
 
 ## Interface of Dataloader
 
@@ -54,7 +59,7 @@ The above interface requires the `meta_info_file` to provide the dataset informa
     100.bmp   	32.56107532210109   	19.12472638223644   train/val/test
     ```
 
-- For FR datasets: ref_name, dist_name, mos(mean), std, split_name 
+- For FR datasets: ref_name, dist_name, mos(mean), std, split_name
     ```
     I01.bmp        I01_01_1.bmp   5.51429        0.13013 train/val/test
 

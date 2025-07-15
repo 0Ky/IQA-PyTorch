@@ -1,8 +1,8 @@
-Training tools 
-============
+Training tools
+==============
 .. toctree::
    :maxdepth: 3
-   
+
    autoapi/pyiqa/data/index
    autoapi/pyiqa/losses/index
    autoapi/pyiqa/models/index
